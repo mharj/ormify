@@ -1,0 +1,35 @@
+{
+  "name": "ormify",
+  "version": "0.0.1",
+  "description": "Ormify",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "mocha -r ts-node/register test/*.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mharj/ormify.git"
+  },
+  "keywords": [
+    "orm"
+  ],
+  "author": "mharj",
+  "license": "LGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/mharj/ormify/issues"
+  },
+  "homepage": "https://github.com/mharj/ormify#readme",
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.12.21",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "ts-node": "^8.0.2",
+    "tslint": "^5.12.1",
+    "tslint-config-prettier": "^1.17.0",
+    "typescript": "^3.3.1"
+  }
+}
