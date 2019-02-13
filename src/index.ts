@@ -20,6 +20,7 @@ interface IOrmProperties {
 };
 
 export interface IOrmSchema {
+	name: string;
 	properties: IOrmProperties;
 }
 
