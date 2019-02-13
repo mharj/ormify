@@ -15,8 +15,12 @@ export interface IOrmKey {
 
 export type OrmSchemaBuilder<C> = {[P in keyof C]-?: PropertyTypes};
 
+interface IOrmProperties {
+	[key: string]: PropertyTypes
+};
+
 export interface IOrmSchema {
-	[key: string]: PropertyTypes;
+	properties: IOrmProperties;
 }
 
 export interface IOrmObject {
